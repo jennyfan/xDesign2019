@@ -43,10 +43,10 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 0.5rem 1rem;
 }
 section {
-    padding: 2rem 1rem;
+    padding: 3rem 2rem 2rem 2rem;
     min-height: 80vh;
     opacity: 0;
 }
@@ -156,7 +156,7 @@ small, .small, .small li {
     margin-bottom: 8px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
   h2 {
     font-size: 32px;
     line-height: 40px;
@@ -179,14 +179,14 @@ small, .small, .small li {
 
 
 a:link {
-    color: #2e57ff;
+    color: #FF9811;
     text-decoration: none;
 }
 a:visited {
-  color: #2d318f;
+  color: #FF9811;
 }
-a:active, a:focus {
-    color: #2e57ff;
+a:active, a:focus, a:hover {
+  color: #FF9811;
     text-decoration: underline;
 }
 input {
@@ -249,8 +249,11 @@ input {
 
 
 @media screen and (max-width: 575px) {
+  .navbar-brand {
+    top: 8px;
+  }
   section {
-    padding: 3rem 2rem 4rem 2rem;
+    padding: 2rem 1rem;
   }
   .navbar {
       padding: 0;
