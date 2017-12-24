@@ -142,13 +142,13 @@ ul, li {
 }
 p, li {
     font-weight: 100;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 26px;
     text-align: left;
 }
 small, .small, .small li {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     margin-bottom: 8px;
 }
@@ -196,7 +196,7 @@ input {
 
 /* Navbar */
 .navbar {
-  padding: 0;
+  padding: 8px;
 }
 .navbar-bg {
   background-color: #2D318F;
@@ -211,7 +211,7 @@ input {
 .navbar-brand {
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 12px;
 }
 .navbar-nav .nav-link {
     border-radius: 0;
@@ -236,9 +236,9 @@ input {
 .cta:hover {
   background-color: #F05A2A;
 }
-.navbar .cta {
+/* .navbar .cta {
     padding: 2px 24px 6px;
-}
+} */
 
 
 
@@ -300,7 +300,7 @@ hr {
 
 /*** PULSING BUTTON: https://codepen.io/seansean11/pen/dhwzj ***/
 .pulse-button {
-  margin-top: 48px;
+  margin: 96px auto 16px;
   display: inline-block;
   text-align: center;
   width: 150px;
