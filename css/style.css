@@ -6,26 +6,26 @@
 }
 @font-face {
   font-family: 'Calibre';
-  src: url('../fonts/CalibreWeb-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CalibreWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CalibreWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/CalibreWeb-bold..ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/calibre-semibold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/calibre-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/calibre-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/calibre-semibold-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
   font-weight: 700; 
 }
 @font-face {
   font-family: 'Calibre';
-  src: url('../fonts/CalibreWeb-Medium.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CalibreWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CalibreWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/CalibreWeb-Medium..ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/calibre-medium-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/calibre-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/calibre-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/calibre-medium-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
   font-weight: 400;
 }
 @font-face {
   font-family: 'Calibre';
-  src: url('../fonts/CalibreWeb-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CalibreWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CalibreWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/CalibreWeb-Light..ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/calibre-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/calibre-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/calibre-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/calibre-regular-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
   font-weight: 100;
 }
 
