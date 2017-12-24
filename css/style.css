@@ -47,7 +47,7 @@ body {
 }
 section {
     padding: 3rem 2rem 2rem 2rem;
-    min-height: 80vh;
+    min-height: 100vh;
     opacity: 0;
 }
 #cover {
@@ -60,31 +60,19 @@ section {
     text-align: center;
 }
 .center-area {  
-  position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.center-area:before {
-  content: ''; 
-  display: inline-block; 
-  height: 100%; 
-  vertical-align: middle;
-}
-.title {
-  display: inline-block;
-  vertical-align: middle;/* 
-  white-space: normal; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #conference {
   background-color: #2D318F;
   color: #fff;
 }
-#schedule, #team {
+#schedule {
   background-color: #fff;
 }
-#sponsors {
+#sponsors, #team {
   background-color: #FFB813;
     background-image: url('../img/bg_orange.png');
     background-size: cover;
@@ -163,7 +151,7 @@ small, .small, .small li {
   }
   h3 {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 30px;
   }
   p, li {
     font-size: 24px;
@@ -216,9 +204,9 @@ input {
   color: #FF9811;
 }
 .nav-pills .nav-link.active {
-  background-color: #2E57FF;
+  background: none;
+  color: #FF9811;
 }
-
 
 /* Navbar */
 .navbar {
