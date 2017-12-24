@@ -4,7 +4,7 @@ $(window).on("load",function() {
 
 	// Fade in on scroll
     $("section").each(function() {
-      var objectTop = $(this).offset().top + 200;
+      var objectTop = $(this).offset().top + 100;
       
       if (objectTop < windowBottom) { // scrolling down
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}

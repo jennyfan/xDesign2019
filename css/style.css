@@ -43,7 +43,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     text-align: center;
-    padding: 2rem 0.5rem 1rem;
+    padding: 2rem 0 1rem;
 }
 section {
     padding: 3rem 2rem 2rem 2rem;
@@ -111,8 +111,8 @@ h2 {
     font-weight: 700;
 }
 h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 30px;
     margin: 0.75rem auto 0;
     /* text-transform: uppercase; */
     font-weight: 700;
@@ -148,10 +148,6 @@ small, .small, .small li {
   h2 {
     font-size: 32px;
     line-height: 40px;
-  }
-  h3 {
-    font-size: 24px;
-    line-height: 30px;
   }
   p, li {
     font-size: 24px;
@@ -265,11 +261,8 @@ input {
 }
 .cta:hover {
   background-color: #F05A2A;
+  text-decoration: none;
 }
-/* .navbar .cta {
-    padding: 2px 24px 6px;
-} */
-
 
 
 /*** COLOR/STYLE OVERRIDES ***/
@@ -326,11 +319,15 @@ hr {
 .tr div {
   padding: 0;
 }
+.tr .td {
+    width: 100%;
+    margin: 0;
+}
 
 
 /*** PULSING BUTTON: https://codepen.io/seansean11/pen/dhwzj ***/
 .pulse-button {
-  margin: 79px auto 16px;
+  margin: 86px auto 16px;
   display: inline-block;
   text-align: center;
   width: 150px;
@@ -366,9 +363,4 @@ hr {
     transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
-}
-@media screen and (min-width: 1024px) {
-   .pulse-button {
-      margin: 79px auto 16px;
-   }
 }
