@@ -342,7 +342,7 @@ hr {
 
 /*** PULSING BUTTON: https://codepen.io/seansean11/pen/dhwzj ***/
 .pulse-button {
-  margin: 96px auto 16px;
+  margin: 79px auto 16px;
   display: inline-block;
   text-align: center;
   width: 150px;
@@ -378,4 +378,9 @@ hr {
     transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
+}
+@media screen and (min-width: 1024px) {
+   .pulse-button {
+      margin: 79px auto 16px;
+   }
 }
