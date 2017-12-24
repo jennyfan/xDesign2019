@@ -15,8 +15,9 @@ $(window).on("load",function() {
 
     // Add Nav BG color on scroll
     var coverHeight = $("#cover").innerHeight();
+    var navHeight = $("#navbar").innerHeight();
 
-    if (windowBottom > (2*coverHeight)) {
+    if (windowBottom > (coverHeight+navHeight)) {
     	$("#navbar").addClass("navbar-bg");
     } else {
     	$("#navbar").removeClass("navbar-bg");
