@@ -7,8 +7,19 @@ function setup() {
   var canvas = createCanvas(w, h);
   canvas.parent('bg');
 
-  for (var i = 0; i < 50; i++) {
-    boids[i] = new Boid(random(width), random(height));
+  var colors = ["#A3CC4A",
+           "#BAE6ED",
+           "#21549F",
+           "#FEC755",
+           "#FD9079",
+           "#EC1100",
+           "#9A6B00"];
+
+  for (var i = 0; i < 150; i++) {
+    // select random color
+    j = round(random(6));
+
+    boids[i] = new Boid(random(width), random(height), colors[j]);
   }
 }
 
@@ -17,19 +28,23 @@ function windowResized() {
 }
 
 function draw() {
+  // draw the bg color
   background(24,20,34);
+
+  // populate boids
   for (var i = 0; i < boids.length; i++) {
     boids[i].run(boids);
   }
 }
 
-function Boid(x, y) {
+function Boid(x, y, c) {
   this.acceleration = createVector(0, 0);
   this.velocity = p5.Vector.random2D();
   this.position = createVector(x, y);
   this.r = 3.0;
-  this.maxspeed = 3; // Maximum speed
+  this.maxspeed = 2; // Maximum speed
   this.maxforce = 0.05; // Maximum steering force
+  this.color = c;
 }
 
 Boid.prototype.run = function(boids) {
@@ -72,9 +87,10 @@ Boid.prototype.seek = function(target) {
 }
 
 Boid.prototype.render = function() {
-  fill(86, 86, 204);
-  strokeWeight(0);
-  stroke(0);
+  // default fill purple
+  // fill(86, 86, 204);
+  fill(this.color);
+  noStroke();
   ellipse(this.position.x, this.position.y, 5, 5);
 }
 
@@ -86,7 +102,7 @@ Boid.prototype.borders = function() {
 }
 
 Boid.prototype.separate = function(boids) {
-  var desiredseparation = 20.0;
+  var desiredseparation = 15.0;
   var steer = createVector(0, 0);
   var count = 0;
   for (var i = 0; i < boids.length; i++) {
