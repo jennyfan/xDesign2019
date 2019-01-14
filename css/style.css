@@ -61,6 +61,11 @@ section {
     padding: 0 10%;
     z-index: 1;
 }
+#speakers img {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+}
 .center-area {
   min-height: 100vh;
   display: flex;
@@ -68,7 +73,14 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-#schedule, #team, #sponsors, #conference {
+#speakers, #schedule, #team, #sponsors, #conference {
+  background-color: #fff;
+}
+.bio {
+  padding-right: 24px !important;
+  display: none;
+}
+#speakers {
   background-color: #fff;
 }
 #footer {
@@ -329,7 +341,7 @@ hr {
   padding: 0.75rem 0.75rem 1rem 0.75rem;
 }
 .tr:hover {
-  background-color: #FFE27C;
+  background-color: #FFFFFF;
 }
 .tr div {
   padding: 0;
