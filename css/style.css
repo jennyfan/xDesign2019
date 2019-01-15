@@ -64,7 +64,14 @@ section {
 #speakers img {
   width: 100%;
   max-width: 250px;
-  display: block;
+  display: block; 
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+#speakers img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: 0.5s;
 }
 .center-area {
   min-height: 100vh;
