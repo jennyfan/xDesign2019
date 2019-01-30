@@ -13,8 +13,6 @@ $(window).on("load",function() {
       }
     });
 
-
-
     // Add Nav BG color on scroll
     var coverHeight = $("#cover").innerHeight();
     var navHeight = $("#navbar").innerHeight();
@@ -35,4 +33,21 @@ event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
+});
+
+// Bio Toggle
+$('.toggle').click(function(e) {
+  e.preventDefault();
+
+  var $this = $(this);
+
+if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
 });
