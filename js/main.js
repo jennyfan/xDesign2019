@@ -51,3 +51,32 @@ if ($this.next().hasClass('show')) {
         $this.next().slideToggle(350);
     }
 });
+
+// activate Slick
+$(document).ready(function(){
+  $('.slideshow').slick({
+    autoplay: true,
+    arrows: true,
+    adaptiveHeight: true,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    pauseOnFocus: true,
+    swipeToSlide: true,
+    draggable: true,
+    // fade: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+        {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
+  });
+});
