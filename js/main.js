@@ -55,12 +55,12 @@ if ($this.next().hasClass('show')) {
 // activate Slick
 $(document).ready(function(){
   $('.slideshow').slick({
-    autoplay: true,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
     arrows: true,
     adaptiveHeight: true,
     dots: true,
     infinite: false,
-    speed: 500,
     pauseOnFocus: true,
     swipeToSlide: true,
     draggable: true,
